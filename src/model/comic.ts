@@ -1,19 +1,37 @@
-//adding a comic interface. 
-// This is sort of like a model but made for the font end only.
+//adding a comic interface.
 //Dissapears when Vite turns ts in js
 
 //putting export in front of using
 //allows the interface to be exported now
+//This is typeing (giving a type to) the raw data so 
+//we can give it to the Comic Class
 export interface ComicData {
 
-    comic_id: number; 
-
+    comicId: number; 
     title: string;
-
     description: string | null;
-
     episode: number | null;
-
     createdAt: string | null;
+
+}
+
+export class Comic {
+
+    //have to call again because the class needs it's 
+    //opwn properties in order to work correctly
+    comicId: number;
+    title: string; 
+    description: string |null;
+    episode: number | null;
+    createdAt: string | null;
+
+    
+    constructor(data: ComicData) {
+      this.comicId = data.comicId;
+      this.title = data.title;
+      this.description = data.description;
+      this.episode  = data.episode;
+      this.createdAt = data.createdAt;
+    }
 
 }
