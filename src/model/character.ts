@@ -3,7 +3,7 @@ export interface CharacterData {
     characterId: number;
     name: string;
     age: number | null;
-    gender: string | string;
+    gender: string | null;
     description: string | null;
 
 }
@@ -13,7 +13,7 @@ export class Character {
     characterId: number;
     name: string;
     age: number | null;
-    gender: string | string;
+    gender: string | null;
     description: string | null;
 
     constructor(data: CharacterData) {
