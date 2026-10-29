@@ -29,6 +29,6 @@ With this site I am learning how to connect my back end C# to the front end with
 
 {Make a list of things that you need to fix, improve, and add in the future.}
 
-- Item 1
+- Filter Comic by tag or character
 - Item 2
 - Item 3
