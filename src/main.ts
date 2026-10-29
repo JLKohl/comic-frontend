@@ -1,5 +1,6 @@
 import './style.css';
 import { getComics } from './api/comicAPI';
+import { getComicDetails } from './api/comicAPI';
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
@@ -29,6 +30,8 @@ async function showComics() {
     list.innerHTML = `<p>Looks like the kids ran off with the page!</p><p>Please try again later</p>`
     
   }
+
+  getComicDetails(1).then(console.log);
 
 }
 
