@@ -1,4 +1,6 @@
 import {Comic, type ComicData} from '../model/comic';
+import { Details, type ComicDetailsData } from '../model/details';
+
 
 const API_URL = "http://localhost:5147";
 
@@ -16,6 +18,15 @@ export async function getComics(): Promise<Comic[]> {
 }
 
 
-// export async function getComicDetails(comicId: number) {
-    
-// }
+export async function getComicDetails(comicId: number) : Promise<Details> {
+    const response = await fetch(`${API_URL}/comics/${comicId}/details`);
+
+    if (!response.ok) {
+        throw new Error(`Not found (${response.status})`);
+    }
+
+    const data: ComicDetailsData = await response.json();
+    return new Details(data);
+
+
+}
