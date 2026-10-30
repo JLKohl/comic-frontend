@@ -30,5 +30,5 @@ With this site I am learning how to connect my back end C# to the front end with
 {Make a list of things that you need to fix, improve, and add in the future.}
 
 - Filter Comic by tag or character
-- Item 2
-- Item 3
+- Add actual comic images for use in the database
+- Add Descriptions to the database for the comics
