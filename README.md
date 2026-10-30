@@ -22,8 +22,8 @@ With this site I am learning how to connect my back end C# to the front end with
 
 {Make a list of websites that you found helpful in this project}
 
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [Contentful](https://www.contentful.com/blog/what-is-typescript-and-why-should-you-use-it/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 # Future Work
 
