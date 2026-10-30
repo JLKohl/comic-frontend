@@ -7,26 +7,26 @@ app.innerHTML = `
   <h1>Wildly Imaginative</h1>
   <h2>Let your imagination run wild</h2>
   <select id="comic-select" hidden>
-  <option value="">Pick a Comic Category</option>
+  <option value="">Pick a Comic</option>
   </select>
   <div id="details"></div>
 `
 //creating a function to display the information from the comicAPI
 async function showComics() {
  
-  //these consts are finding the differant elements 
+  //these consts are finding the different elements 
   // that are inside of app.innerHTML so that the 
   // information can be added dynamically
   const select = document.querySelector<HTMLSelectElement>(`#comic-select`)!
   const detailsDiv = document.querySelector<HTMLDivElement>(`#details`)!
   //try to get the comics and throw an 
-  // error that is visable on the page if there is an error
+  // error that is visible on the page if there is an error
   try {
     
     const comics = await getComics();
 
     //first comic will come first, 
-    //sorting from smalles number to largest number
+    //sorting from smallest number to largest number
     comics.sort((a,b) => (a.episode ?? 0) - (b.episode ?? 0));
 
     select.innerHTML = `<option value="">Pick a Comic</option>` + 
@@ -34,8 +34,8 @@ async function showComics() {
 
     //telling the code that the select is not hidden because 
     //we have found the information. If the information is 
-    // not found the select dropdown dissapears for UX reasons
-    // 'hidden' is a build in typescrpt bool
+    // not found the select dropdown disappears for UX reasons
+    // 'hidden' is a built-in boolean
     select.hidden = false;
 
     //change is the event name. It is saying 
@@ -46,7 +46,7 @@ async function showComics() {
 
       detailsDiv.innerHTML = `
         <h3>${details.comic.title}</h3>
-        <div class="placeholder">Comic Comic Soon</div>
+        <div class="placeholder">Comic Coming Soon</div>
         <p>${details.comic.description ?? 'No Description Yet'}</p>
       `;
     });

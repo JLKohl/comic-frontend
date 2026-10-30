@@ -1,9 +1,9 @@
 //adding a comic interface.
-//Dissapears when Vite turns ts in js
+//Disappears when Vite turns ts in js
 
 //putting export in front of using
 //allows the interface to be exported now
-//This is typeing (giving a type to) the raw data so 
+//This is typing (giving a type to) the raw data so 
 //we can give it to the Comic Class
 export interface ComicData {
 
@@ -17,8 +17,8 @@ export interface ComicData {
 
 export class Comic {
 
-    //have to call again because the class needs it's 
-    //opwn properties in order to work correctly
+    //have to call again because the class needs its 
+    //own properties in order to work correctly
     comicId: number;
     title: string; 
     description: string |null;

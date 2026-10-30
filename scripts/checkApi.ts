@@ -1,10 +1,10 @@
 //side note about folder placement. The scripts folder belongs 
 //at the node level because it prints to the terminal which
 // means it is interacting with node directly.
-// Anything that is going to interact with the page goes insides of 
-// the src file. 
+// Anything that is going to interact with the page goes inside of 
+// the src folder. 
 
-//run this chack function by running 'npm run check'
+//run this check function by running 'npm run check'
 async function checkDataBase(){
 
     const response = await fetch("http://localhost:5147/comics")

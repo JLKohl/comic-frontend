@@ -4,7 +4,7 @@ import { Details, type ComicDetailsData } from '../model/details';
 
 const API_URL = "http://localhost:5147";
 
-//this function is fething the data from the comicAPI 
+//this function is fetching the data from the comicAPI 
 // so that it can be sent to the front of the site 
 export async function getComics(): Promise<Comic[]> {
     const response = await fetch(`${API_URL}/comics`);

@@ -24,8 +24,8 @@ export class Details {
     characters: Character[];
 
     //building objects inside of the constructor 
-    // so that the classes can build them selves
-    // makeing the objects more usable
+    // so that the classes can build themselves
+    // making the objects more usable
     constructor(data: ComicDetailsData){
 
         this.comic = new Comic(data.comic);
