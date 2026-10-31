@@ -5,7 +5,7 @@ This site is the front end for my Comic "Wildly Imaginative". Right now it is di
 With this site I am learning how to connect my back end C# to the front end with TypeScript. 
 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[TypeScript Video](http://youtube.link.goes.here)
 
 # Development Environment
 
@@ -15,19 +15,21 @@ With this site I am learning how to connect my back end C# to the front end with
 - [Vite](https://vite.dev/) (8.3.4): dev server and build tool
 - [Claude Code](https://claude.com/download) (Claude Opus 5.5): AI assistant used in VS Code for explaining TypeScript concepts
 
-## Lanuguage and Libraries
+## Language and Libraries
 - [TypeScript](https://www.typescriptlang.org/download/)(6.0.3)
 
-# Useful Websites
+## How to Run
+1. Start the C# API (`dotnet run`)
+2. `npm install`
+3. `npm start`, then open localhost:5173
+4. `npm run check` to test the API from the terminal
 
-{Make a list of websites that you found helpful in this project}
+# Useful Websites
 
 - [Contentful](https://www.contentful.com/blog/what-is-typescript-and-why-should-you-use-it/)
 - [TypeScript](https://www.typescriptlang.org/)
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
 
 - Filter Comic by tag or character
 - Add actual comic images for use in the database

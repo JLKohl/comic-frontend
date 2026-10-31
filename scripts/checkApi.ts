@@ -4,7 +4,7 @@
 // Anything that is going to interact with the page goes inside of 
 // the src folder. 
 
-//recursice function so that the site will retry the fetch
+//recursive function so that the site will retry the fetch
 // multiple times before it throws the error
 async function fetchWithRetry(url: string, triesLeft: number){
     try {
