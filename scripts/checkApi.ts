@@ -36,7 +36,7 @@ async function checkDataBase(){
 
  } catch { 
 
-    console.log("Could not reach the Api. Is it running?")
+    console.log("Could not reach the API. Is it running?")
 
  }
 
