@@ -3,7 +3,7 @@
 // means it is interacting with node directly.
 // Anything that is going to interact with the page goes inside of 
 // the src folder. 
-import {fetchWithRetry} from '../src/api/fetchWithRetry' 
+import {fetchWithRetry} from '../src/api/fetchWithRetry.ts' 
 
 //run this check function by running 'npm run check'
 async function checkDataBase(){
