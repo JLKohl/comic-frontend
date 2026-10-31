@@ -19,6 +19,13 @@ async function showComics() {
   // information can be added dynamically
   const select = document.querySelector<HTMLSelectElement>(`#comic-select`)!
   const detailsDiv = document.querySelector<HTMLDivElement>(`#details`)!
+
+  let dots = 0;
+
+  const loading = setInterval(() => {
+    dots = (dots + 1) % 4;
+    detailsDiv.innerHTML = `<p>Loading${'.'.repeat(dots)}</p>`;
+  }, 400);
   //try to get the comics and throw an 
   // error that is visible on the page if there is an error
   try {
@@ -55,6 +62,8 @@ async function showComics() {
 
     detailsDiv.innerHTML = `<p>Looks like the kids ran off with the page!</p><p>Please try again later</p>`
     
+  } finally {
+    clearInterval(loading);
   }
 
   //line of code used for testing 
