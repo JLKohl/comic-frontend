@@ -5,7 +5,7 @@ This site is the front end for my Comic "Wildly Imaginative". Right now it is di
 With this site I am learning how to connect my back end C# to the front end with TypeScript. 
 
 
-[TypeScript Video](http://youtube.link.goes.here)
+[TypeScript Video](https://youtu.be/5kf7ujksJes?si=9EpTElVRqTspXTM5)
 
 # Development Environment
 
