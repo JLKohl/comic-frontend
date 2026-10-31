@@ -13,7 +13,7 @@ With this site I am learning how to connect my back end C# to the front end with
 - [Node.js](https://nodejs.org/) (v26.4.0): runs JavaScript tools on my computer
 - [npm](https://www.npmjs.com/) (11.17.0): installs packages
 - [Vite](https://vite.dev/) (8.3.4): dev server and build tool
-- [Claude Code](https://claude.com/download) (Claude Opus 5.5): AI assistant used in VS Code for explaining TypeScript concepts
+- [Claude Code](https://claude.com/download) (Claude Opus 5.5): AI assistant used in VS Code for explaining TypeScript concepts, finding referance code for concepts that were not understood and spell checking work. 
 
 ## Language and Libraries
 - [TypeScript](https://www.typescriptlang.org/download/)(6.0.3)
