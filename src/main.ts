@@ -34,7 +34,15 @@ async function showComics() {
 
     //first comic will come first, 
     //sorting from smallest number to largest number
-    comics.sort((a,b) => (a.episode ?? 0) - (b.episode ?? 0));
+    //Sorting works by subtracting the number of the 
+    // second episode from the first episode that is 
+    // given to the sort function. When the result is negative
+    // the first number is smaller and stays in front of the second number
+    // If the first number is larger the result will be positive and
+    // the second number will move in front of the first one. 
+    // if and episode is null, ?? 0 treats it as a 0 so the math 
+    // still works. 
+    comics.sort((first,second) => (first.episode ?? 0) - (second.episode ?? 0));
 
     select.innerHTML = `<option value="">Pick a Comic</option>` + 
     comics.map(comic => `<option value="${comic.comicId}">${comic.episode}. ${comic.title}</option>`).join(' ');
